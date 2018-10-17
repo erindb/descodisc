@@ -1,0 +1,18 @@
+# summary of the thing
+kinds of questions
+analysis techniques
+results so far
+candidate next steps
+
+different vectors
+different corpora
+
+train on corpus of interest? ***
+- might need to do this.
+
+robustness - how much does model matter?
+statistics capture what intuition?
+use cases of those statistics
+
+once that's written, meet with dan, esp for "what do we do with it?"
+

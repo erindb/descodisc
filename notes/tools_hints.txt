@@ -1,0 +1,8 @@
+## Using `jupyter`
+
+* https://dev.widemeadows.de/2017/08/23/use-your-conda-environment-in-jupyter-notebooks/
+* https://amber-md.github.io/pytraj/latest/tutorials/remote_jupyter_notebook
+
+## Using `conda`
+
+* https://conda.io/docs/user-guide/tasks/manage-environments.html
