@@ -1,4 +1,6 @@
 read_data.py
+distances.py
+run_skipthoughts.py
 .ipynb_checkpoints/*
 data/*
 
