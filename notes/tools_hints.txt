@@ -3,6 +3,40 @@
 * https://dev.widemeadows.de/2017/08/23/use-your-conda-environment-in-jupyter-notebooks/
 * https://amber-md.github.io/pytraj/latest/tutorials/remote_jupyter_notebook
 
+```
+jupyter notebook --no-browser --port=8889
+```
+
+```
+ssh -N -f -L localhost:8888:localhost:8889 username@your_remote_host_name
+```
+
 ## Using `conda`
 
 * https://conda.io/docs/user-guide/tasks/manage-environments.html
+
+## Using tmux
+
+* https://gist.github.com/MohamedAlaa/2961058
+
+## Using theano
+
+* http://deeplearning.net/software/theano/library/config.html#environment-variables
+
+## Sharing compute resources
+
+* finding out who's running something as root:
+
+```
+pstree -hp | grep MYSTERY_PROCESS_ID
+# output:
+#           |             |-bash(ID_WHO_RAN_THAT)---sudo(14758)---Xorg(MYSTERY_PROCESS_ID)
+
+ps -ef|grep ID_WHO_RAN_THAT
+# output:
+# USERNAME_WHO_RAN_THAT   ID_WHO_RAN_THAT  14645  0 12:58 pts/24   00:00:00 -bash
+
+getent passwd erindb
+# output:
+# erindb:x:1036:1036:Erin D. Bennett,,,:/home/erindb:/bin/bash
+```
