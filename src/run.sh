@@ -13,10 +13,15 @@ python read_data.py --n_documents $n_documents
 
 source deactivate
 
-source activate skipthoughts
-jupyter nbconvert --to script run_skipthoughts.ipynb
-THEANO_FLAGS='device=cuda'$cuda python run_skipthoughts.py --n_documents $n_documents
+source activate dissent
+jupyter nbconvert --to script run_dissent.ipynb
+python run_dissent.py --n_documents $n_documents --gpu_id $cuda
 source deactivate
+
+# source activate skipthoughts
+# jupyter nbconvert --to script run_skipthoughts.ipynb
+# THEANO_FLAGS='device=cuda'$cuda python run_skipthoughts.py --n_documents $n_documents
+# source deactivate
 
 # source activate dod
 # jupyter nbconvert --to script distances.ipynb
